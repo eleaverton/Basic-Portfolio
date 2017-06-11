@@ -8,7 +8,15 @@ all three. There are also items specific to some of the pages.  */
 	box-sizing: border-box;
 }
 
-/*header*/
+html{
+	height:100%;
+}
+
+body{
+	height:100%;
+}
+
+/*header for all three*/
 
 header{
 	background-color: #ffffff;
@@ -65,23 +73,15 @@ li {
 }
 /*end header*/
 
-/*content part of page*/
-/*this one works if height is fixed at 700px*/
+/*content part of page for all three*/
+
 .full {
 	width: 100%;
 	background-image: url(../images/vintage-leaves.png);
-	height: 700px;
+	height: 100%;
 	position: relative;
 	}
 
-/* does not work
-.wrapper {
-	
-	min-height: 100%;
-	background-image: url(../images/vintage-leaves.png);
-	position:relative;
-	
-	}*/
 
 #main-bio, #contact-message, #portfolio-page {
 	padding:15px;
@@ -141,6 +141,10 @@ h3{
 	margin-right: 15px;
 }
 
+/*end content part of page*/
+
+/*footer for all three*/
+
 footer {
 	background: #666666;
 	padding: 25px;
@@ -150,10 +154,9 @@ footer {
   	color: #ffffff;
   	border-top: 4px solid #4aaaa5;
   	width:100%;
-  	position:relative;
-  	/*bottom:0px;*/ 	
 }
 
+/* end footer*/
 
 /* specific to index.html*/
 p{
