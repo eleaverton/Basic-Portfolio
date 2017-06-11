@@ -1,10 +1,14 @@
+/* CSS for all pages of the Portfolio Assignment - hw1. The pages
+are all structured similarly, so a portion of this code applies to
+all three. There are also items specific to some of the pages.  */
+
+/*Applies to all three*/
+
 * {
 	box-sizing: border-box;
 }
 
-body {
-	
-}
+/*header*/
 
 header{
 	background-color: #ffffff;
@@ -59,16 +63,27 @@ li {
 	font-size:12px;
 	text-decoration: none;
 }
+/*end header*/
 
-
+/*content part of page*/
+/*this one works if height is fixed at 700px*/
 .full {
 	width: 100%;
 	background-image: url(../images/vintage-leaves.png);
-	height: 550px;
+	height: 700px;
 	position: relative;
-}
+	}
 
-#main-bio {
+/* does not work
+.wrapper {
+	
+	min-height: 100%;
+	background-image: url(../images/vintage-leaves.png);
+	position:relative;
+	
+	}*/
+
+#main-bio, #contact-message, #portfolio-page {
 	padding:15px;
 	background-color: #ffffff;
 	border: 1px solid #cccccc;
@@ -89,17 +104,6 @@ h2 {
 	padding-bottom: 15px;
 	border-bottom: 2px solid #cccccc;
 }
-
-p{
-	font-size: 14px;
-}
-
-
-#bio-image{
-	float: left;
-	margin: 10px;
-}
-
 
 #connection{
 	float: left;
@@ -137,17 +141,34 @@ h3{
 	margin-right: 15px;
 }
 
-#contact-message {
-	padding:15px;
-	background-color: #ffffff;
-	border: 1px solid #cccccc;
-	margin-top:15px;
-	margin-left:100px;
-	width: 500px;
-	float: left;
-	position: absolute;
+footer {
+	background: #666666;
+	padding: 25px;
+	font-size: 10px;
+  	text-align: center;
+  	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  	color: #ffffff;
+  	border-top: 4px solid #4aaaa5;
+  	width:100%;
+  	position:relative;
+  	/*bottom:0px;*/ 	
 }
 
+
+/* specific to index.html*/
+p{
+	font-size: 14px;
+}
+
+
+#bio-image{
+	float: left;
+	margin: 10px;
+	width: 200px;
+}
+
+
+/*specific to contact.html*/
 form {
 	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777777
@@ -174,13 +195,30 @@ input[type=submit] {
 	margin-top: 15px;
 }
 
+/*specific to portfolio.html*/
 
-footer {
-	background: #666666;
-	padding: 25px;
-	font-size: 10px;
-  	text-align: center;
-  	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  	color: #ffffff;
-  	border-top: 4px solid #4aaaa5;
+.image1, .image2, .image3, .image4, .image5 {
+	margin:15px;
+	position: relative;
+	width: 200px;
+	float: left;
 }
+
+#hangmanpic, #rpgpic, #triviapic, #rutgerspic, #rockpic{
+	width: 200px;
+	
+}
+
+#hangman, #rpg-game, #trivia-game, #rutgers, #rock-paper{
+	background: #4aaaa5;
+	color: #ffffff;
+	text-align:center;
+	position: absolute;
+	top: 100px;
+	width: 100%;
+	padding: 5px;
+
+}
+
+
+
